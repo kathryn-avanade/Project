@@ -13,11 +13,11 @@ The app has 2 databases, one for plants, the other for gardens. The fields are t
 Plants:
 
 |Name|Date Planted|Last Watered|Garden|
-|---|---|---|
-|Bok Choy|19.04.2021|19.04.2021|Back|
-|Swiss Chard|19.04.2021|19.04.2021|Back|
-|Radish|19.04.2021|19.04.2021|Back|
-|Cress|19.04.2021|19.04.2021|Windowsill|
+|---|---|---|---|
+|Bok Choy|19/04/2021|19/04/2021|Back|
+|Swiss Chard|19/04/2021|19/04/2021|Back|
+|Radish|19/04/2021|19/04/2021|Back|
+|Cress|19/04/2021|19/04/2021|Windowsill|
 
 
 Gardens:
