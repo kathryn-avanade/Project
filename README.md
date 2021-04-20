@@ -34,12 +34,14 @@ Gardens:
 [User Stories, Tasks and Epics](https://dev.azure.com/kathrynmcgregor/Project-Plant-App)
 
 **Risk Assessment**
+Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app.
 
 |Risk|Likelihood|Severity|Control|Update
 |---|---|---|---|---|
-|Link doesn't work|Medium|High|Testing or divert|N/a
-|Update or delete:can't find name in table|High|Medium|Have input control or useful error message|n/a
-|Create:Not enough fields are entered|High|Low|Have default entries or required entries with useful error messages|n/a
+|Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings|n/a
+|U/D:Can't find name in table|High|High|Useful error message, like 'The name/dates/garden doesn't match records'|n/a
+|C:Not enough fields are entered|High|High|Have required entries|n/a
+|C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
 
 
 
