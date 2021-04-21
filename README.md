@@ -42,6 +42,7 @@ Severity is understood to mean the degree of threat to the functionality (the cr
 |U/D:Can't find name in table|High|High|Useful error message, like 'The name/dates/garden doesn't match records'|n/a
 |C:Not enough fields are entered|High|High|Have required entries|n/a
 |C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
+|Multiple users of a database at once|-|-|-
 
 
 
