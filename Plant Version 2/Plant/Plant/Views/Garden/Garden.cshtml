@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Plant.Models.myGarden>
+
+@{
+    ViewData["Title"] = "Garden";
+}
+
+<h1>Garden List</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+        </tr>
+    </thead>
+
+</table>
