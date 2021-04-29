@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plant-app.css">
+    <title>Plants</title>
+</head>
+
+<body>
+    <h1>All Plants</h1>
+    <nav>
+        <ul>
+            <li><a href="plant-app.html">Home</a></li>
+        </ul>
+    </nav>
+    <!-- Show a list of the plants in the plants database here
+    <img src="Rce903488f2c5198d3277118b5a7a7fba.png" alt="Leaves">
+    At the bottom of the page have buttons to plant, dig up, and water and a form 
+to enter the plant name, date planted, if it needs watering and what garden it is in -->
+
+    <img src="Rce903488f2c5198d3277118b5a7a7fba.png" alt="Leaves">
+
+    <form>
+        <!-- All inputs are required -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <!-- Date input format needed, with a placeholder giving an example format -->
+        <label for="datep">Date Planted:</label><br>
+        <input type="date" id="datep" name="datep" placeholder="YYYY-MM-DD" required><br>
+
+        <label for="datew">Last Watered:</label><br>
+        <input type="date" id="datew" name="datew" placeholder="YYYY-MM-DD" required><br>
+
+        <!-- A drop down arrow could be useful, which gets the options from the gardens table -->
+        <!-- An easier way could be a placeholder which gives an example -->
+        <label for="garden">Garden:</label><br>
+        <input type="text" id="garden" name="garden" placeholder="e.g. Greenhouse" required>
+
+    </form>
+
+
+    <a id="plant_button">Plant</a>
+    <a id="digup_button">Dig Up</a>
+    <a id="water_button">Water</a>
+
+    <!-- the functionality may be added in using c# now -->
+    <script src="plant-app.js"></script>
+
+
+</body>
+
+</html>
