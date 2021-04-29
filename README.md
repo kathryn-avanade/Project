@@ -60,7 +60,7 @@ Gardens:
 |Back|
 |Greenhouse|
 
-![ERD Diagram](/
+![ERD Diagram](/ERD.png?raw=true)
 
 A potential one to many (gardens to plants) relationship / one to one (plant to garden) relationship could be implemented to extend the functionality of this app.
 
