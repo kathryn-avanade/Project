@@ -40,7 +40,7 @@ My idea  is to create an app for household gardening, where the **CRUD** operati
 
 2. My **two tables** will be one for plants, containing their names, date planted, date last watered and garden, and the other will be for a list of gardens the plants have been planted in. Currently, only the plant table will have CRUD functionality. The garden table will also be created in the database but the app will only display a list of gardens that have been entered via the plant form entry. These both exist running on an azure virtual machine.
 
-3. The architecture of my app is best described using the diagrams below: 
+3. The architecture of my app is best described by the examples and ERD relationship diagram below: 
 
 Plants:
 
@@ -60,16 +60,21 @@ Gardens:
 |Back|
 |Greenhouse|
 
+![ERD Diagram](/
+
+A potential one to many (gardens to plants) relationship / one to one (plant to garden) relationship could be implemented to extend the functionality of this app.
+
 The brief also requries a detailed **risk Assessment** which is as follows:
 Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app.
 
 |Risk|Likelihood|Severity|Control|Update
 |---|---|---|---|---|
 |Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings|n/a
-|U/D:Can't find name in table|High|High|Useful error message, like 'The name/dates/garden doesn't match records'|n/a
 |C:Not enough fields are entered|High|High|Have required entries|n/a
+|U:User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries|n/a
 |C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
-|Multiple users of a database at once|-|-|-
+|Multiple users of a database at once|-|-|-|-
+|Web server goes down|Low|High|Set up a backup virtual machine|-
 
 4. In the demonstration of my app you will be able to see the CRUD functionality is acheived. I will describe how the app has met the requirements on Azure Devops Boards in this section. **TODO**
 5. **TODO TESING**
