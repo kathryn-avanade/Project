@@ -1,6 +1,7 @@
 # 1st Project 
 
 **Brief**
+
 I have been tasked with creating an app with **CRUD** functionality. 
 
 The implementation of this project aims to cover all the core training modules, and as well as a functioning app, requires the following: 
