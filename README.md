@@ -36,51 +36,59 @@ My idea  is to create an app for household gardening, where the **CRUD** operati
 * **Delete:** Delete a plant that has died or been dug up
 * **Update:** Update the record of the plant with when it was last watered
 
-1. For **project Management** I have used azure devops which you can find a link to here: 
+**Project Management** 
+
+I have used azure devops which you can find a link to here: 
 [User Stories, Tasks and Epics](https://dev.azure.com/kathrynmcgregor/Project-Plant-App)
 
-2. My **two tables** will be one for plants, containing their names, date planted, date last watered and garden, and the other will be for a list of gardens the plants have been planted in. Currently, only the plant table will have CRUD functionality. The garden table will also be created in the database but the app will only display a list of gardens that have been entered via the plant form entry. These both exist running on an azure virtual machine.
+**App Architecture**
 
-3. The architecture of my app is best described by the examples and ERD relationship diagram below: 
+My **two tables** will be one for plants, containing their names, date planted, date last watered and garden, and the other will be for a list of gardens the plants have been planted in. Currently, only the plant table will have CRUD functionality. The garden table will also be created in the database but the app will only display a list of gardens that have been entered via the plant form entry. These both exist running on an azure virtual machine.
 
 Plants:
 
-|Name|Date Planted|Last Watered|Garden|
-|---|---|---|---|
-|Bok Choy|19/04/2021|19/04/2021|Back|
-|Swiss Chard|19/04/2021|19/04/2021|Back|
-|Radish|19/04/2021|19/04/2021|Back|
-|Cress|19/04/2021|19/04/2021|Windowsill|
+|ID|Name|Date Planted|Last Watered|Garden|
+|---|---|---|---|---|
+|1|Bok Choy|19/04/2021|19/04/2021|Allotment|
+|2|Swiss Chard|19/04/2021|19/04/2021|Front|
+|3|Radish|19/04/2021|19/04/2021|Back|
+|4|Cress|19/04/2021|19/04/2021|Greenhouse|
 
 Gardens:
 
-|Name|
-|---|
-|Allotment|
-|Front|
-|Back|
-|Greenhouse|
+|ID|Name|
+|---|---|
+|1|Allotment|
+|2|Front|
+|3|Back|
+|4|Greenhouse|
+
+The **ERD** for these tables is shown below. The prority for this app is to have CRUD functionality on the plant table, however this could be extended further, and the relationshp between the plant and gardens table could be properly implemented in the future. A potential one to many (gardens to plants) relationship / one to one (plant to garden) relationship could be implemented.
 
 ![ERD Diagram](/ERD.png?raw=true)
 
-A potential one to many (gardens to plants) relationship / one to one (plant to garden) relationship could be implemented to extend the functionality of this app.
+**Risk Assessment**
 
 The brief also requries a detailed **risk Assessment** which is as follows:
-Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app.
+Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app, and also the degree of threat to the security of the web app. 
 
 |Risk|Likelihood|Severity|Control|Update
 |---|---|---|---|---|
 |Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings|n/a
 |C:Not enough fields are entered|High|High|Have required entries|n/a
-|U:User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries|n/a
+|U:User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries and a proper home page description so that the user knows how to use the app |n/a
 |C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
-|Multiple users of a database at once|-|-|-|-
+|Multiple users of a database at once|Low|High|Would have to check whether migrations are enough to keep c# code and azure database in sync (but haven't been taught this)|-
 |Web server goes down|Low|High|Set up a backup virtual machine|-
+|User enters the same entry twice|High|Low|This would make the database confusing, and lead to mismatches if the another record should have been updated|Have helpful messages such as 'You already have this entry in the database'|Yet to be implemented
+|Accidental deletion of important files|Medium|High|Push to github after major changes and work on feature branches|Had a few problems with git (29.04.21) which made this risk very relevent, now I am more careful about where and what im pushing to github
 
-4. In the demonstration of my app you will be able to see the CRUD functionality is acheived. I will describe how the app has met the requirements on Azure Devops Boards in this section. **TODO**
-5. **TODO TESING**
-6. My front end website has been created using Asp.net using MVCs. 
-7. On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
+ In the demonstration of my app you will be able to see the CRUD functionality is acheived. I will describe how the app has met the requirements on Azure Devops Boards in this section. **TODO**
+ 
+**TESING**
+
+My front end website has been created using Asp.net using MVCs. 
+On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
 
 
 
