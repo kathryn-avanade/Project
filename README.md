@@ -1,4 +1,12 @@
 # 1st Project 
+**Contents**
+
+1. Brief
+2. My Idea
+3. Project Management 
+4. App Architecture
+5. Risk Assessment 
+6. Testing
 
 **Brief**
 
@@ -25,7 +33,8 @@ reports and evidence to support a TDD approach.
 Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.
 
-**My Idea**
+**My Idea**#
+
 My idea  is to create an app for household gardening, where the **CRUD** operations are as follows;
 * **Create:** Add a plant you've planted that requires the fields:
   * Name
@@ -38,8 +47,10 @@ My idea  is to create an app for household gardening, where the **CRUD** operati
 
 **Project Management** 
 
-I have used azure devops which you can find a link to here: 
+* I have used azure devops which you can find a link to here: 
 [User Stories, Tasks and Epics](https://dev.azure.com/kathrynmcgregor/Project-Plant-App)
+
+* I have also kept a diary with details on what was done and when, in addition to this documentation. You can find this here.
 
 **App Architecture**
 
@@ -69,23 +80,25 @@ The **ERD** for these tables is shown below. The prority for this app is to have
 
 **Risk Assessment**
 
-The brief also requries a detailed **risk Assessment** which is as follows:
-Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app, and also the degree of threat to the security of the web app. 
+* The brief also requries a detailed **risk Assessment** which is in the table below.
+* The type of risks considered include the technical side of the project, whether the servers and technologies work reliably (external) and also whether there are risks assocaited with the technical implementation of the app (internal). There are other risks associated with the organization and project management which I have also included. 
+* Severity is understood to mean the degree of threat to the functionality (the create, update, delete and read) of the app, and also the degree of threat to the security of the web app. 
+* The update field is used to indicated whether these risks were actually encountered, when they were encountered and what was done about them. 
 
 |Risk|Likelihood|Severity|Control|Update
 |---|---|---|---|---|
 |Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings|n/a
-|C:Not enough fields are entered|High|High|Have required entries|n/a
-|U:User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries and a proper home page description so that the user knows how to use the app |n/a
+|Create: Not enough fields are entered|High|High|Have required entries|n/a
+|Update: User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries and a proper home page description so that the user knows how to use the app |n/a
 |C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
 |Multiple users of a database at once|Low|High|Would have to check whether migrations are enough to keep c# code and azure database in sync (but haven't been taught this)|-
 |Web server goes down|Low|High|Set up a backup virtual machine|-
-|User enters the same entry twice|High|Low|This would make the database confusing, and lead to mismatches if the another record should have been updated|Have helpful messages such as 'You already have this entry in the database'|Yet to be implemented
+|User enters the same entry twice|High|Low|This would make the database confusing, and lead to mismatches if the another record should have been updated. Have helpful messages such as 'You already have this entry in the database'|Yet to be implemented
 |Accidental deletion of important files|Medium|High|Push to github after major changes and work on feature branches|Had a few problems with git (29.04.21) which made this risk very relevent, now I am more careful about where and what im pushing to github
 
  In the demonstration of my app you will be able to see the CRUD functionality is acheived. I will describe how the app has met the requirements on Azure Devops Boards in this section. **TODO**
  
-**TESING**
+**TESTING**
 
 My front end website has been created using Asp.net using MVCs. 
 On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
