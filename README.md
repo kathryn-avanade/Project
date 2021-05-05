@@ -2,13 +2,18 @@
 **Contents**
 
 [Brief](#Brief)
+
 [My Idea](#MyIdea)
+
 [Project Management](#ProjMan) 
+
 [App Architecture](#AppArch)
+
 [Risk Assessment](#Risk)
+
 [Testing](#Testing)
 
-<span id="Brief">Contents</span>
+<span id="Brief"></span>
 **Brief**
 
 I have been tasked with creating an app with **CRUD** functionality. 
@@ -35,7 +40,7 @@ Feature-Branch model which will subsequently be built through a CI
 server and deployed to a cloud-based virtual machine.
 
 
-<span id="MyIdea">Contents</span>
+<span id="MyIdea"></span>
 **My Idea**
 
 My idea  is to create an app for household gardening, where the **CRUD** operations are as follows;
@@ -55,7 +60,7 @@ To further explain my idea, I have written a short description for the user:
     If your plant unfortunately dies, click 'dig up' next to the plant record."
 
 
-<span id="ProjMan">Contents</span>
+<span id="ProjMan"></span>
 **Project Management** 
 
 * I have used azure devops which you can find a link to here: 
@@ -64,7 +69,7 @@ To further explain my idea, I have written a short description for the user:
 * I have also kept a diary with details on what was done and when, in addition to this documentation. You can find this here.
 
 
-<span id="AppArch">Contents</span>
+<span id="AppArch"></span>
 **App Architecture**
 
 My **two tables** will be one for plants, containing their names, date planted, date last watered and garden, and the other will be for a list of gardens the plants have been planted in. Currently, only the plant table will have CRUD functionality. The garden table will also be created in the database but the app will only display a list of gardens that have been entered via the plant form entry. These both exist running on an azure virtual machine.
@@ -92,7 +97,7 @@ The **ERD** for these tables is shown below. The prority for this app is to have
 ![ERD Diagram](/ERD.png?raw=true)
 
 
-<span id="Risk">Contents</span>
+<span id="Risk"></span>
 **Risk Assessment**
 
 * The brief also requries a detailed **risk Assessment** which is in the table below.
@@ -114,7 +119,7 @@ The **ERD** for these tables is shown below. The prority for this app is to have
  In the demonstration of my app you will be able to see the CRUD functionality is acheived. I will describe how the app has met the requirements on Azure Devops Boards in this section. **TODO**
  
  
-<span id="Testing">Contents</span>
+<span id="Testing"></span>
 **TESTING**
 
 My front end website has been created using Asp.net using MVCs. 
