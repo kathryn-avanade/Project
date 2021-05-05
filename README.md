@@ -1,5 +1,6 @@
 # 1st Project 
 **Contents**
+---------------
 
 [Brief](#Brief)
 
@@ -15,6 +16,7 @@
 
 <span id="Brief"></span>
 **Brief**
+---------------
 
 I have been tasked with creating an app with **CRUD** functionality. 
 
@@ -42,6 +44,7 @@ server and deployed to a cloud-based virtual machine.
 
 <span id="MyIdea"></span>
 **My Idea**
+---------------
 
 My idea  is to create an app for household gardening, where the **CRUD** operations are as follows;
 * **Create:** Add a plant you've planted that requires the fields:
@@ -62,6 +65,7 @@ To further explain my idea, I have written a short description for the user:
 
 <span id="ProjMan"></span>
 **Project Management** 
+---------------
 
 * I have used azure devops which you can find a link to here: 
 [User Stories, Tasks and Epics](https://dev.azure.com/kathrynmcgregor/Project-Plant-App)
@@ -71,6 +75,7 @@ To further explain my idea, I have written a short description for the user:
 
 <span id="AppArch"></span>
 **App Architecture**
+---------------
 
 My **two tables** will be one for plants, containing their names, date planted, date last watered and garden, and the other will be for a list of gardens the plants have been planted in. Currently, only the plant table will have CRUD functionality. The garden table will also be created in the database but the app will only display a list of gardens that have been entered via the plant form entry. These both exist running on an azure virtual machine.
 
@@ -99,6 +104,7 @@ The **ERD** for these tables is shown below. The prority for this app is to have
 
 <span id="Risk"></span>
 **Risk Assessment**
+---------------
 
 * The brief also requries a detailed **risk Assessment** which is in the table below.
 * The type of risks considered include the technical side of the project, whether the servers and technologies work reliably (external) and also whether there are risks assocaited with the technical implementation of the app (internal). There are other risks associated with the organization and project management which I have also included. 
@@ -121,6 +127,7 @@ The **ERD** for these tables is shown below. The prority for this app is to have
  
 <span id="Testing"></span>
 **TESTING**
+---------------
 
 My front end website has been created using Asp.net using MVCs. 
 On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
