@@ -113,12 +113,12 @@ The **ERD** for these tables is shown below. The prority for this app is to have
 
 |Risk|Likelihood|Severity|Control|Update
 |---|---|---|---|---|
-|Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings|n/a
-|Create: Not enough fields are entered|High|High|Have required entries|n/a
-|Update: User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries and a proper home page description so that the user knows how to use the app |n/a
-|C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|n/a
-|Multiple users of a database at once|Low|High|Would have to check whether migrations are enough to keep c# code and azure database in sync (but haven't been taught this)|-
-|Web server goes down|Low|High|Set up a backup virtual machine|-
+|Link doesn't work, or mistyped URL|Low|High|Test the hyperlinks and add in diversions for common mispellings using routing|Yet to be implemented
+|Create: Not enough fields are entered|High|High|Have required entries|Added required fields
+|Update: User tried to update the name,garden,date planted of a plant (this shouldn't change as once a plant has been created it can only be watered or dug up, in this case, the record should be deleted and remade)|Low|Low|Have read only entries and a proper home page description so that the user knows how to use the app |Added description
+|C/U/D:Incorrect format is entered into the form|High|High|Have input control, e.g. a placeholder and/or a drop down selection|Yet to be implemented
+|Multiple users of a database at once|Low|High|Would have to check whether migrations are enough to keep c# code and azure database in sync (but haven't been taught this)|Not sure how to do this
+|Web server goes down|Low|High|Set up a backup virtual machine|Not sure how to do this
 |User enters the same entry twice|High|Low|This would make the database confusing, and lead to mismatches if the another record should have been updated. Have helpful messages such as 'You already have this entry in the database'|Yet to be implemented
 |Accidental deletion of important files|Medium|High|Push to github after major changes and work on feature branches|Had a few problems with git (29.04.21) which made this risk very relevent, now I am more careful about where and what im pushing to github
 
