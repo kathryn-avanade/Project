@@ -69,8 +69,8 @@ To further explain my idea, I have written a short description for the user:
 
 * I have used azure devops which you can find a link to here: 
 [User Stories, Tasks and Epics](https://dev.azure.com/kathrynmcgregor/Project-Plant-App)
-
 * I have also kept a diary with details on what was done and when, in addition to this documentation. You can find this here.
+* In regards to **continuous integration**, I aim to produce code on my local computer, push this to github, which should automatically push this code to azure devops. Here, tests and reports should be automatically run, and then the app should be built and deployed using a pipeline.  
 
 
 <span id="AppArch"></span>
@@ -128,6 +128,9 @@ The **ERD** for these tables is shown below. The prority for this app is to have
 <span id="Testing"></span>
 **TESTING**
 ---------------
+
+The test requirements for the project require a high level of **test coverage** which I aim to acheive 65% coverage by testing my controllers in my MVC app.
+
 
 My front end website has been created using Asp.net using MVCs. 
 On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
