@@ -1,4 +1,6 @@
 # 1st Project 
+_Here is a quick note about where to find my files. The main branch contains the readme and everything relevent to it, plus the yml file for deployment. The actual project code is in the master branch. There are other branches with other versions of the project, these can be largely ignored. I am aware I've proabably used Github wrongly but all my files are here, I just can't seem to merge them so they are all in the main branch._
+
 **Contents**
 ---------------
 
@@ -194,7 +196,7 @@ As well as solving the problems that I stated in the section above, I would like
 **Project Diary**
 ---------------
 
-[a link to diary](Project Weekly Report.docx)
+
 
 
 
