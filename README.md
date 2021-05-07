@@ -14,6 +14,8 @@
 
 [Testing](#Testing)
 
+[Deployment](#Deployment) 
+
 [Front-End Design](#FD)
 
 [Known Issues](#Issues)
@@ -147,7 +149,9 @@ This proved to be a difficult and long process, due to the need to rewrite the c
 ![Home](/Home.png?raw=true)
 ![GardenPlant](/GardenPlant.png?raw=true)
 
-Deployment 
+<span id="Deployment"></span>
+**Deployment**
+---------------
 
 Deploying requires creating a pipeline and an Ubuntu 18.04 VM build agent (A build agent is a server that allows pipeline jobs to run on it) with SSH keys configured in an agent pool called plant-pool. 
 The steps involved in deploying this app will be:
@@ -165,8 +169,11 @@ Unfortunately I ran out of time, and couldn't fix my pipeline/deployment process
 ![Create](/CreatePage.png?raw=true)
 ![read](/ReadPage.png?raw=true)
 ![details](/DetailsPage.png?raw=true)
-<span id="Issues"></span>
+![GardenHome](/GardenHome.png?raw=true)
+![ReadPage](/ReadPage.png?raw=true)
+![Update](/Update.png?raw=true)
 
+<span id="Issues"></span>
 **Known Issues**
 ---------------
 There are a couple of problems I wasn't able to fix within the time of this project, they include: 
@@ -186,6 +193,8 @@ As well as solving the problems that I stated in the section above, I would like
 <span id="Diary"></span>
 **Project Diary**
 ---------------
+
+[a link to diary](Project Weekly Report.docx)
 
 
 
