@@ -135,6 +135,10 @@ I used Xunit testing for this project, using an "Arrange", "Act", and "Assert" s
 
 This proved to be a difficult and long process, due to the need to rewrite the code using a repository pattern and mocking. I managed to write a few tests and generate a coverage report, which I have included below. I used XUnit testing, ensuring I kept to best practises by keeping all tests associated with seperate controllers in serparate folders. 
 
+![Summary](/Summary.png?raw=true)
+![Home](/Home.png?raw=true)
+![GardenPlant](/Plant.png?raw=true)
+
 
 My front end website has been created using Asp.net using MVCs. 
 On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
