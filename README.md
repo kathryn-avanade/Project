@@ -196,6 +196,10 @@ As well as solving the problems that I stated in the section above, I would like
 **Project Diary**
 ---------------
 
+![Pic1](/Picture1.png?raw=true)
+![Pic2](/Picture2.png?raw=true)
+![Pic3](/Picture3.png?raw=true)
+![Pic4](/Picture4.png?raw=true)
 
 
 
