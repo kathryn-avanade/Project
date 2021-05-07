@@ -14,6 +14,14 @@
 
 [Testing](#Testing)
 
+[Front-End Design](#FD)
+
+[Known Issues](#Issues)
+
+[Future Improvements](#Future)
+
+[Project Diary](#Diary)
+
 <span id="Brief"></span>
 **Brief**
 ---------------
@@ -141,24 +149,44 @@ This proved to be a difficult and long process, due to the need to rewrite the c
 
 Deployment 
 
-Deploying requires creating a pipeline and an Ubuntu 18.04 VM build agent (A build agent is a server that allows pipeline jobs to run on it) with SSH keys configured in an agent pool called dotnet-app-pool.
+Deploying requires creating a pipeline and an Ubuntu 18.04 VM build agent (A build agent is a server that allows pipeline jobs to run on it) with SSH keys configured in an agent pool called plant-pool. 
 The steps involved in deploying this app will be:
 1.	Restore the dependencies 
 2.	Build and compile 
 3.	Publish the project to an artefact repository
 4.	Run the compiled code
 
+Unfortunately I ran out of time, and couldn't fix my pipeline/deployment process to restore the dependencies in the project. 
 
-Front-End Design 
+<span id="FD"></span>
+**Front-End Design**
+---------------
+![Home](/HomePage.png?raw=true)
+![Create](/CreatePage.png?raw=true)
+![read](/ReadPage.png?raw=true)
+![details](/DetailsPage.png?raw=true)
+<span id="Issues"></span>
 
-Known Issues
-My front end website has been created using Asp.net using MVCs. 
-On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
+**Known Issues**
+---------------
+There are a couple of problems I wasn't able to fix within the time of this project, they include: 
+* Need to change the dates into some kind of date type, and the form to request a date type for proper input and data control 
+* The list of gardens can contain multiple of the same garden, which isn’t ideal
+* If a plant has a unique garden and the plant is deleted, the garden still shows in the database which is misleading 
 
-Future Improvements
+<span id="Future"></span>
+**Future Improvements**
+---------------
 
+As well as solving the problems that I stated in the section above, I would like to extend the functionality of the app to:
+* Enable CRUD on the gardens table 
+* Enable searches to be performed on the database to find out which plants needed to be watered / where in a specific garden
+* Enable the user to add a picture or a photo of the plant
 
-Project Diary 
+<span id="Diary"></span>
+**Project Diary**
+---------------
+
 
 
 
