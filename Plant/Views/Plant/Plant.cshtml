@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Plant.Models.myPlant>
+
+@{
+    ViewData["Title"] = "Plant";
+}
+
+<h1>Plant List</h1>
+
+<p>
+    <a asp-action="Create">Plant Something</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DatePlanted)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateLastWatered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Garden)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DatePlanted)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateLastWatered)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Garden)
+            </td>
+            <td>
+                @Html.ActionLink("Water your plant", "Edit", new {id=item.ID}) |
+                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                @Html.ActionLink("Dig Up", "Delete", new { id = item.ID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
