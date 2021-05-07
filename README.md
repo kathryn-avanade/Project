@@ -139,14 +139,26 @@ This proved to be a difficult and long process, due to the need to rewrite the c
 ![Home](/Home.png?raw=true)
 ![GardenPlant](/GardenPlant.png?raw=true)
 
+Deployment 
 
+Deploying requires creating a pipeline and an Ubuntu 18.04 VM build agent (A build agent is a server that allows pipeline jobs to run on it) with SSH keys configured in an agent pool called dotnet-app-pool.
+The steps involved in deploying this app will be:
+1.	Restore the dependencies 
+2.	Build and compile 
+3.	Publish the project to an artefact repository
+4.	Run the compiled code
+
+
+Front-End Design 
+
+Known Issues
 My front end website has been created using Asp.net using MVCs. 
 On my github you can see that I have used the feature branch model **TO DO**. I have deployed my app using an azure web app resource, the link for which is here **TODO ADD LINK**
 
+Future Improvements
 
 
-
-
+Project Diary 
 
 
 
