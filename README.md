@@ -133,11 +133,11 @@ The test requirements for the project required a high level of **test coverage**
 I used Xunit testing for this project, using an "Arrange", "Act", and "Assert" structure. Ideally, all methods in all controllers would be tested. This includes testing the method returns a view, and also that it performs the correct alteration of the database in the create, delete and edit methods. To test the app further would require integration, functional and load/stress testing, as unit testing isolates the part of your code from it's dependancies and infrastructure. 
 
 
-This proved to be a difficult and long process, due to the need to rewrite the code using a repository pattern and mocking. I managed to write a few tests and generate a coverage report, which I have included below. I used XUnit testing, ensuring I kept to best practises by keeping all tests associated with seperate controllers in serparate folders. 
+This proved to be a difficult and long process, due to the need to rewrite the code using a repository pattern and mocking. I managed to write a five tests, testing my Home and Garden controllers completely, and generate a coverage report (included below). I used XUnit testing, ensuring I kept to best practises by keeping all tests associated with seperate controllers in serparate folders. 
 
 ![Summary](/Summary.png?raw=true)
 ![Home](/Home.png?raw=true)
-![GardenPlant](/Plant.png?raw=true)
+![GardenPlant](/GardenPlant.png?raw=true)
 
 
 My front end website has been created using Asp.net using MVCs. 
